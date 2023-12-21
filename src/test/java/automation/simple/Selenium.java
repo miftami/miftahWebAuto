@@ -28,8 +28,8 @@ public class Selenium {
         
         //Switch ke iframe isi email
         driver.switchTo().frame("ifmail");
-        String searchIsiMail = driver.findElement(By.xpath("//span[contains(.,'Thanks for connecting!')]")).getText();
-        String txtExpectedMail = "Thanks for connecting!";
+        String searchIsiMail = driver.findElement(By.xpath("/html/body/header/div[2]/span/button/span[contains(.,'Deliverability')]")).getText();
+        String txtExpectedMail = "Deliverability";
         
          //verifikasi isi email
          Assert.assertEquals(searchIsiMail,txtExpectedMail);
