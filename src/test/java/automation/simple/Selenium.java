@@ -28,7 +28,7 @@ public class Selenium {
         
         //Switch ke iframe isi email
         driver.switchTo().frame("ifmail");
-        String searchIsiMail = driver.findElement(By.xpath("/html/body/header/div[2]/span/button/span[contains(.,'Deliverability')]")).getText();
+        String searchIsiMail = driver.findElement(By.xpath("//span[.='Deliverability']")).getText();
         String txtExpectedMail = "Deliverability";
         
          //verifikasi isi email
